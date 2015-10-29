@@ -1,0 +1,6 @@
+﻿<div ng-controller="AppController as vm">
+    <div ng-include="'app/customers.html'"></div>
+    <div ng-if="vm.currentCustomer">
+        <div ng-include="'app/customer-detail.html'"></div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+﻿<h1>Hello, Customers</h1>
+<div class="text-info">{{vm.dataSource}}</div>
+
+<p ng-if="!vm.customers.length" class="alert-info">Loading customers ...</p>
+<p ng-if="vm.customers.length">Pick a customer</p>
+
+<div ng-repeat="cust in vm.customers" ng-click="vm.onSelect(cust)">
+    <label>Id: </label>{{cust.id}}
+    <label>Name: </label>{{cust.fullName}}
+</div>

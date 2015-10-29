@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<!--
+    1. Add nuget package: "jasminejs" version="2.2" 
+    2. Add jasmine stylesheet
+    3. Add three jasmine JS libraries
+    4. Add a "proof of life" test in a script
+    5. Add jasmine typings file (tsd install jasmine --save)
+    6. Create and load the 1st spec file
+
+    Jasmine docs: http://jasmine.github.io/2.3/introduction.html
+-->
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Simple Jasmine Tests</title>
+    <link rel="stylesheet" href="../Content/jasmine.css">
+
+    <script src="../Scripts/jasmine.js"></script>
+    <script src="../Scripts/jasmine-html.js"></script>
+    <script src="../Scripts/boot.js"></script>
+</head>
+
+<body>
+
+    <script>
+        it('true is true', function () { expect(true).toEqual(true); });
+    </script>
+
+    <script src="1st.spec.js"></script>
+
+</body>
+
+</html>

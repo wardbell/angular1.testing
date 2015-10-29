@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+    <style>
+        /* This helps the ng-show/ng-hide animations start at the right place. */
+        /* Since Angular has this but needs to load, this gives us the class early. */
+        .ng-hide {
+            display: none !important;
+        }
+    </style>
+    <title data-ng-bind="title">Hello Angular</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+    <!-- inject-vendor:css -->
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- endinject -->
+    <!-- inject:css -->
+    <link href="../Content/customtheme.css" rel="stylesheet">
+    <link href="../Content/styles.css" rel="stylesheet" />
+    <!-- endinject -->
+
+</head>
+<body ng-app="app" class="panel-body">
+
+    <div ng-include="'app/app.html'"></div>
+
+    <!-- Vendor Scripts -->
+    <script src="/Scripts/angular.js"></script>
+
+    <!-- App Scripts -->
+    <script src="app/app.module.js"></script>
+
+    <script src="app/app.controller.js"></script>
+    <script src="app/customer.js"></script>
+    <script src="app/mock-customers.js"></script>
+    <script src="app/config.js"></script>
+    <script src="app/dataservice.js"></script>
+
+</body>
+</html>
